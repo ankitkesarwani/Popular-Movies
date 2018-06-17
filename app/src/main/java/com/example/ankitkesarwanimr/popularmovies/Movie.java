@@ -25,7 +25,7 @@ public class Movie implements Parcelable {
         this.mReleaseDate = releaseDate;
     }
 
-    protected Movie(Parcel in) {
+    private Movie(Parcel in) {
         mOriginalTitle = in.readString();
         mPosterPath = in.readString();
         mOverview = in.readString();
@@ -37,13 +37,11 @@ public class Movie implements Parcelable {
         mReleaseDate = in.readString();
     }
 
-    public static final Creator<Movie> CREATOR = new Creator<Movie>() {
-        @Override
-        public Movie createFromParcel(Parcel in) {
-            return new Movie(in);
+    public static final Parcelable.Creator<Movie> CREATOR = new Parcelable.Creator<Movie>() {
+        public Movie createFromParcel(Parcel source) {
+            return new Movie(source);
         }
 
-        @Override
         public Movie[] newArray(int size) {
             return new Movie[size];
         }
@@ -109,6 +107,7 @@ public class Movie implements Parcelable {
     public String getDateFormat() {
         return DATE_FORMAT;
     }
+
 
     @Override
     public int describeContents() {

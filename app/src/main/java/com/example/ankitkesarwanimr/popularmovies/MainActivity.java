@@ -1,6 +1,7 @@
 package com.example.ankitkesarwanimr.popularmovies;
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -28,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
             Movie movie = (Movie) parent.getItemAtPosition(position);
+
+            Intent intent = new Intent(getApplicationContext(), MovieDetailsActivity.class);
+            intent.putExtra(getResources().getString(R.string.parcel_movie), movie);
+
+            startActivity(intent);
 
         }
     };
