@@ -14,6 +14,10 @@ Features
 
 Screens
 ------
+<ul>
+  <img src="" height="25%" width="25%"/></br>
+  <img src="" height="25%" width="25%"/></br>
+ </ul>
 
 Instructions
 ------
