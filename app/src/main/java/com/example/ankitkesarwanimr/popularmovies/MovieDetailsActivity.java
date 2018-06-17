@@ -12,6 +12,10 @@ import com.squareup.picasso.Picasso;
 
 import java.text.ParseException;
 
+/**
+ * Created by Ankit Kesarwani
+ */
+
 public class MovieDetailsActivity extends AppCompatActivity {
 
     private final String LOG_TAG = MovieDetailsActivity.class.getSimpleName();
@@ -36,12 +40,14 @@ public class MovieDetailsActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Movie movie = intent.getParcelableExtra(getString(R.string.parcel_movie));
 
-        mMovieName.setText(movie.getOriginalTitle());
+        if (movie.getOriginalTitle() != null) {
+            mMovieName.setText(movie.getOriginalTitle());
+        } else {
+            mMovieName.setText(getString(R.string.not_found));
+        }
 
         Picasso.with(this)
                 .load(movie.getPosterPath())
-                .resize(getResources().getInteger(R.integer.tmdb_poster_w185_width),
-                        getResources().getInteger(R.integer.tmdb_poster_w185_height))
                 .error(R.drawable.image_not_available)
                 .placeholder(R.drawable.loading)
                 .into(mImageView);

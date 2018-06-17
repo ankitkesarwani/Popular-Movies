@@ -148,7 +148,13 @@
                             android:text="Movie Name"
                             android:id="@+id/movie_details_name"
                             android:textSize="18sp"
-                            android:textColor="@color/colorPrimary"/>
+                            android:textColor="@color/colorPrimary"
+                            android:paddingBottom="6dp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary"/>
 
                         <TextView
                             android:layout_width="fill_parent"

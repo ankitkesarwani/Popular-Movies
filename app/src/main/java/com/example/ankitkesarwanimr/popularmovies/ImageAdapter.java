@@ -9,6 +9,10 @@ import android.widget.ListAdapter;
 
 import com.squareup.picasso.Picasso;
 
+/**
+ * Created by Ankit Kesarwani
+ */
+
 class ImageAdapter extends BaseAdapter {
 
     private final Context mContext;

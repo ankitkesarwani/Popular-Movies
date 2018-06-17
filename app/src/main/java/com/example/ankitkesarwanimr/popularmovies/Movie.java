@@ -3,6 +3,10 @@ package com.example.ankitkesarwanimr.popularmovies;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+/**
+ * Created by Ankit Kesarwani
+ */
+
 public class Movie implements Parcelable {
 
     private static final String DATE_FORMAT = "yyyy-MM-dd";
@@ -52,7 +56,7 @@ public class Movie implements Parcelable {
     }
 
     public void setOriginalTitle(String originalTitle) {
-        if (originalTitle.equals("null")) {
+        if (!originalTitle.equals("null")) {
             this.mOriginalTitle = originalTitle;
         }
     }

@@ -38,4 +38,6 @@
     <!-- Error user information -->
     <string name="error_need_internet">This application needs Internet connection to function.</string>
 
+    <string name="not_found">Not Found</string>
+
 </resources>

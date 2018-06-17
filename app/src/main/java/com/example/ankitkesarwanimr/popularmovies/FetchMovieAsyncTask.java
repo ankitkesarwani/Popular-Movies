@@ -16,6 +16,10 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * Created by Ankit Kesarwani
+ */
+
 class FetchMovieAsyncTask extends AsyncTask<String, Void, Movie[]> {
 
     private final String LOG_TAG = FetchMovieAsyncTask.class.getSimpleName();

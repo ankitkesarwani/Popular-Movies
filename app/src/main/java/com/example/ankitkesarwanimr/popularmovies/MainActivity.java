@@ -17,6 +17,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+/**
+ * Created by Ankit Kesarwani
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     private GridView mGridView;
@@ -87,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
-        return sharedPreferences.getString("SORT_METHOD", "POPULARITY_DESC");
+        return sharedPreferences.getString(getString(R.string.pref_sort_method_key), getString(R.string.tmdb_sort_pop_desc));
     }
 
     private final GridView.OnItemClickListener moviePosterClickListener = new GridView.OnItemClickListener() {
@@ -133,7 +137,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-
 
         int numMovieObjects = mGridView.getCount();
         if (numMovieObjects > 0) {
