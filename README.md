@@ -15,9 +15,9 @@ Features
 Screens
 ------
 <ul>
-  <img src="https://github.com/ankitkesarwani/Popular-Movies/blob/master/Screens/Screenshot_20180617-123646.png" height="25%" width="25%"/></br>
+  <img src="https://github.com/ankitkesarwani/Popular-Movies/blob/master/Screens/Screenshot_20180617-123646.png" height="25%" width="25%"/>
   <img src="https://github.com/ankitkesarwani/Popular-Movies/blob/master/Screens/Screenshot_20180617-123654.png" height="25%" width="25%"/></br>
-  <img src="https://github.com/ankitkesarwani/Popular-Movies/blob/master/Screens/Screenshot_20180617-123659.png" height="25%" width="25%"/></br>
+  <img src="https://github.com/ankitkesarwani/Popular-Movies/blob/master/Screens/Screenshot_20180617-123659.png" height="25%" width="25%"/>
   <img src="https://github.com/ankitkesarwani/Popular-Movies/blob/master/Screens/Screenshot_20180617-123705.png" height="25%" width="25%"/></br>
  </ul>
 
