@@ -26,7 +26,7 @@ Instructions
 
 You need to create a free account on themoviedb.org and generate your personal API key. More info [HERE](https://www.themoviedb.org/documentation/api).
 
-After getting the API key, replace YOUR_API_KEY with your API key under app/build.grade file.
+After getting the API key, replace YOUR_API_KEY with your API key under app/src/main/res/values/strings.xml file.
 
 Libraries
 ------
